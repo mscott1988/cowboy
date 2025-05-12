@@ -1,106 +1,15 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>HVAC Install Map Out & Checklist</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #f9f9f9;
-      margin: 0;
-      padding: 20px;
-    }
-    header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      border-bottom: 2px solid #ccc;
-      padding-bottom: 10px;
-      margin-bottom: 20px;
-    }
-    .logo {
-      height: 60px;
-    }
-    h1 {
-      font-size: 24px;
-    }
-    section {
-      background: white;
-      border: 1px solid #ddd;
-      border-radius: 10px;
-      padding: 15px;
-      margin-bottom: 20px;
-    }
-    .checkbox {
-      margin-right: 10px;
-    }
-    .section-title {
-      font-weight: bold;
-      font-size: 18px;
-      margin-bottom: 10px;
-    }
-    footer {
-      text-align: center;
-      font-size: 12px;
-      color: #888;
-    }
-  </style>
+  <title>PDF Price Book Extractor</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.14.305/pdf.min.js"></script>
 </head>
 <body>
-  <header>
-    <img src="logo.png" alt="Company Logo" class="logo">
-    <div><strong>Date:</strong> <span id="currentDate"></span></div>
-  </header>
-
-  <h1>Residential HVAC Installation Checklist & Map Out</h1>
-
-  <section>
-    <div class="section-title">Customer Information</div>
-    Name: ___________<br>
-    Address: ___________<br>
-    System Type: ___________<br>
-  </section>
-
-  <section>
-    <div class="section-title">Pre-Install</div>
-    <label><input type="checkbox" class="checkbox"> Equipment matches load calculation</label><br>
-    <label><input type="checkbox" class="checkbox"> Permits pulled</label><br>
-    <label><input type="checkbox" class="checkbox"> Tools & materials on site</label><br>
-  </section>
-
-  <section>
-    <div class="section-title">Map Out</div>
-    <label><input type="checkbox" class="checkbox"> Outdoor unit location clear (min. 12” clearance)</label><br>
-    <label><input type="checkbox" class="checkbox"> Indoor location accessible</label><br>
-    <label><input type="checkbox" class="checkbox"> Thermostat route confirmed</label><br>
-    <label><input type="checkbox" class="checkbox"> Line set run planned & insulated</label><br>
-    <label><input type="checkbox" class="checkbox"> Condensate drain exit confirmed</label><br>
-    <label><input type="checkbox" class="checkbox"> Breaker panel access confirmed</label><br>
-  </section>
-
-  <section>
-    <div class="section-title">Post-Install</div>
-    <label><input type="checkbox" class="checkbox"> Pressure tested</label><br>
-    <label><input type="checkbox" class="checkbox"> Line set vacuumed to 500 microns</label><br>
-    <label><input type="checkbox" class="checkbox"> Charge verified</label><br>
-    <label><input type="checkbox" class="checkbox"> Thermostat tested</label><br>
-    <label><input type="checkbox" class="checkbox"> Job cleaned up</label><br>
-  </section>
-
-  <section>
-    <div class="section-title">Technician Notes & Signature</div>
-    Notes:<br><br>
-    _______________________________________<br><br>
-    Signature: ________________________<br>
-  </section>
-
-  <footer>
-    © 2025 Cowboys Air Conditioning & Heating – All Rights Reserved.
-  </footer>
-
-  <script>
-    document.getElementById('currentDate').textContent = new Date().toLocaleDateString();
-  </script>
+  <h1>📘 Price Book PDF Extractor</h1>
+  <input type="file" id="file-input" accept="application/pdf">
+  <pre id="output">Upload a PDF to extract content...</pre>
+  <script src="app.js"></script>
 </body>
 </html>
