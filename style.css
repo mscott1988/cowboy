@@ -1,0 +1,17 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 2em;
+  background: #f9f9f9;
+}
+
+h1 {
+  color: #333;
+}
+
+#output {
+  background: #fff;
+  border: 1px solid #ccc;
+  padding: 1em;
+  margin-top: 1em;
+  white-space: pre-wrap;
+}
